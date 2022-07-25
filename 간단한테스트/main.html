@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function start(){
+                /*--
+                $(".start").hide();
+                $(".question").show();
+                --*/
+                document.getElementById("start").style.display ="none";
+                document.getElementById("question").style.display ="unset";
+            }
+        </script>
+        <title>여행지 추천</title>
+    </head>
+    <body>
+        <div id="start">
+            테스트 해보세요
+            <input type="button" value="시작하기" onclick="start()">
+        </div>
+        <div id="question">
+            <h2>1번문제</h2>
+            <h5>나는 많이 걸어도 괜찮다 / ㄴㄴ </h5>
+            <span>
+                <button id="up">a</button>
+                <button id="down">b</button>
+            </span>
+        </div>
+        <div id="res">
+            결과는 DHA
+        </div>
+    </body>
+</html>
