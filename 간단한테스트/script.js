@@ -1,6 +1,30 @@
 function start() {
     $("#start").hide();
-    $("#question").show();
+    $("#q1").show();
+}
+function q1(){
+        $("#q1").hide();
+        $("#q2").show();
+}
+function q2(){
+    $("#q2").hide();
+    $("#q3").show();
+}
+function q3(){
+    $("#q3").hide();
+    $("#q4").show();
+}
+function q4(){
+    $("#q4").hide();
+    $("#q5").show();
+}
+function q5(){
+    $("#q5").hide();
+    $("#q6").show();
+}
+function q6(){
+    $("#q6").hide();
+    $("#res").show();
 }
 
 var cnt=0;
@@ -14,7 +38,6 @@ function cntChoice2(choice){
     cnt++;
 }
 function getChoice1(){
-    //document.write(cnt);
     var x;
 
     if(cnt>=2)
@@ -23,7 +46,6 @@ function getChoice1(){
     return x*10;
 }
 function getChoice2(){
-    //document.write(cnt);
     var x;
 
     if(cnt>=2)
