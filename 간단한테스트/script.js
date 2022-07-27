@@ -3,8 +3,8 @@ function start() {
     $("#q1").show();
 }
 function q1(){
-        $("#q1").hide();
-        $("#q2").show();
+    $("#q1").hide();
+    $("#q2").show();
 }
 function q2(){
     $("#q2").hide();
@@ -24,23 +24,48 @@ function q5(){
 }
 function q6(){
     $("#q6").hide();
+    $("#q7").show();
+}
+function q7(){
+    $("#q7").hide();
+    $("#q8").show();
+}
+function q8(){
+    $("#q8").hide();
+    $("#q9").show();
+}
+function q9(){
+    $("#q9").hide();
     $("#res").show();
 }
 
 var cnt=0;
 
 function cntChoice1(choice){
-    if(choice=='H')
+    if(choice=='D')
     cnt++;
 }
 function cntChoice2(choice){
     if(choice=='A')
     cnt++;
 }
+function cntChoice3(choice){
+    if(choice=='H')
+    cnt++;
+}
+
 function getChoice1(){
     var x;
 
-    if(cnt>=2)
+    if(cnt>=2) // d == 0 
+        x=0;
+    else x=1;
+    return x*100;    
+}
+function getChoice3(){ 
+    var x;
+
+    if(cnt>=2) //h==0 
         x=0;
     else x=1;    
     return x*10;
@@ -48,21 +73,13 @@ function getChoice1(){
 function getChoice2(){
     var x;
 
-    if(cnt>=2)
+    if(cnt>=2) //a ==0
         x=0;
     else x=1;
     return x;    
 }
+
 function answer(){
-    res = getChoice1()+getChoice2();
-
-    if(res==0)
-        document.write("핫플 혼여행");
-    else if(res==10)
-        document.write("숨스팟 혼여행");
-    else if(res==11)
-    document.write("핫플 같여행");
-    else if(res==01)
-    document.write("숨스팟 같 여행");
-
+    res = getChoice1()+getChoice2()+getChoice3();
+    
 }
