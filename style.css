@@ -19,21 +19,30 @@ html{
     height: 100%;
     width: 100%;
 }
-
+.p60 img{
+    height: 50%;
+    width:auto;  
+}
 .p20{
     border: solid red;
     height: 20%;
+    display: table;
+    text-align: center;
 }
 .p60{
-    
+    display: inline-block;
     border: solid blue;
     height:  60%;
 }
-
+strong{
+    font-size: 40px;
+}
 .p20 button{
     height: 50%;
     width: 100%;
     padding: 1%;
     inline-size: 40%;
     font-size:large;
+    display: table-cell;
+    vertical-align: middle;
 }
