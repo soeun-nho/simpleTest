@@ -1,0 +1,39 @@
+
+#q1, #q2, #q3,#q4,#q5,#q6, #q7,#q8,#q9,#res{
+    display: none;
+}
+html{
+    height: 100%;;
+}
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    text-align: center;
+    font-family: 'HS-Regular';
+    font-weight: lighter;
+    margin:10px;
+    height: 100%;
+    width: 100%;
+}
+
+.p20{
+    border: solid red;
+    height: 20%;
+}
+.p60{
+    
+    border: solid blue;
+    height:  60%;
+}
+
+.p20 button{
+    height: 50%;
+    width: 100%;
+    padding: 1%;
+    inline-size: 40%;
+    font-size:large;
+}

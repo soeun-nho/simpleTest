@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="../jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+    </head>
+    <body>
+        <div id="start">
+            <div class="p20">
+            <h3>여행지 테스트
+            <br/>
+            나에게 맞는 여행지는?</h3>
+            </div>
+            <div class="p60">
+                이미지
+            </div>
+            <div class="p20">
+                <button  onclick="start();">시작하기</button>
+            </div>  
+        </div>
+         <div id="q1">
+            <div class="p20">
+            <h3>
+                Q1/Q10
+                <br/>
+            여행지에 도착했을 때 나는
+            </h3>
+            </div>
+            <div class="p60">
+                이미지
+            </div>
+            <div class="p20">
+                <button onclick="count('U')">많이 걸어다니는게 좋다</button>
+                <button onclick="count('D')">교통이 편리한 곳이 좋다</button>
+            </div>
+           
+        </span>
+        </div>
+        <div id="q2">
+            <h1>Q2/Q10</h1>
+            <h3>나는 여행지에 갔을 때 오후에도</h3>
+            
+            <span>
+                <button onclick="count('U')">숙소에서 쉴 것이다. </button>
+            <button onclick="count('D')">놀러 나갈 것이다.</button>
+            </span>
+            
+        </div>
+        <div id="q3">
+            <h1>Q3/Q10</h1>
+            <h3>내가 좋아하는 음식은</h3>
+            <span>
+            <button onclick="count('U')">요즘 핫한 퓨전요리</button>
+            <button onclick="count('D')">전통 한식</button>
+            </span>
+        </div>
+            <div id="q4">
+                <h1>Q4/Q10</h1>
+                <h3>나는 여행지에서 웨이팅을 기다릴 수 (    )</h3>
+                <button onclick="count('H')">있다.</button>
+                <button onclick="count('S')"> 없다. </button>
+               
+            </div>
+            <div id="q5">
+                <h1>Q5/Q10</h1>
+                <h3>내가 요즘 가고 싶은 곳은...</h3>
+                <button onclick="count('H')">핫한 곳</button>
+                <button onclick="count('S')">나만 아는 곳</button>
+                
+            </div>
+            <div id="q6">
+                <h1>Q6/Q10</h1>
+                <h3>나는 사람 많은 곳은</h3>
+                <button onclick="count('H')">좋다</button>
+                <button onclick="count('S')">피곤하다</button>
+               
+            </div>
+            <div id="q7">
+                <h1>Q7/Q10</h1>
+                <h3>나는 밥은</h3>
+                <button onclick="count('A')">혼자 먹는게 편하다</button>
+                <button onclick="count('T')">같이 먹는 게 좋다</button>
+               
+            </div>
+            <div id="q8">
+                <h1>Q8/Q10</h1>
+                <h3>나는 여행지에 도착했을 때</h3>
+                <button onclick="count('A')">천천히 구경하고 싶다.</button>
+                <button onclick="count('T')">친구들과 빨리 다음 장소로!</button>
+               
+            </div>
+            <div id="q9">
+                <h1>Q9/Q10</h1>
+                <h3>나는 인생샷은</h3>
+                <button onclick="count('A')">필요없다</button>
+                <button onclick="count('T')">필수!</button>
+                
+            </div>
+            
+            
+         </div>
+    </body>
+</html>
