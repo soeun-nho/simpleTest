@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="../jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+    </head>
+    <body>
+        <div id="start">
+            <h1>여행지 테스트</h1>
+            <h3>나에게 맞는 여행지는?</h3>
+            <button  onclick="start();">시작하기</button>
+         </div>
+         <div id="q1">
+            <h1>1번</h1>
+            <h3>여행지에 도착했을 때 나는</h3>
+            <button onclick="cntChoice1('U')">많이 걸어다니는게 좋다</button>
+            <button onclick="cntChoice1('D')">교통이 편리한 곳이 좋다</button>
+        </div>
+        <div id="q2">
+            <h1>2번</h1>
+            <h3>나는 여행지에 갔을 때 오후에도</h3>
+            <button onclick="cntChoice1('U')">숙소에서 쉴 것이다. </button>
+            <button onclick="cntChoice1('D')">놀러 나갈 것이다.</button>
+
+        </div>
+        <div id="q3">
+            <h1>3번</h1>
+            <h3>내가 좋아하는 음식은</h3>
+            <button onclick="cntChoice1('U')">전통 한식</button>
+            <button onclick="cntChoice1('D')">요즘 핫한 퓨전 요리</button>
+           
+        </div>
+            <div id="q4">
+                <h1>4번</h1>
+                <h3>나는 여행지에서 웨이팅을 기다릴 수 (    )</h3>
+                <button onclick="cntChoice2('H')">있다.</button>
+                <button onclick="cntChoice2('S')"> 없다. </button>
+           
+            </div>
+            <div id="q5">
+                <h1>5번</h1>
+                <h3>내가 요즘 가고 싶은 곳은...</h3>
+                <button onclick="cntChoice2('H')">핫한 곳</button>
+                <button onclick="cntChoice2('S')">나만 아는 곳</button>
+                
+            </div>
+            <div id="q6">
+                <h1>6번</h1>
+                <h3>나는 사람 많은 곳은</h3>
+                <button onclick="cntChoice2('H')">좋다</button>
+                <button onclick="cntChoice2('S')">피곤하다</button>
+              
+            </div>
+            <div id="q7">
+                <h1>7번</h1>
+                <h3>나는 밥은</h3>
+                <button onclick="cntChoice3('A')">혼자 먹는게 편하다</button>
+                <button onclick="cntChoice3('T')">같이 먹는 게 좋다</button>
+             
+            </div>
+            <div id="q8">
+                <h1>8번</h1>
+                <h3>나는 여행지에 도착했을 때</h3>
+                <button onclick="cntChoice3('A')">천천히 구경하고 싶다.</button>
+                <button onclick="cntChoice3('T')">친구들과 빨리 다음 장소로!</button>
+             
+            </div>
+            <div id="q9">
+                <h1>9번</h1>
+                <h3>나는 인생샷은</h3>
+                <button onclick="cntChoice3('A')">필요없다</button>
+                <button onclick="cntChoice3('T')">필수!</button>
+                
+            </div>
+            
+            <div id="q10">
+                <button onclick="result()">클릭</button>
+            </div>
+         </div>
+    </body>
+</html>
